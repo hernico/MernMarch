@@ -63,7 +63,7 @@ const UpdateProduct = () => {
       .put(`http://localhost:8000/api/productolist/actualizar/${id}`, updatedProduct)
       .then((res) => {
         console.log(res.data);
-        navigate('/pets');
+        navigate('/');
       })
    .catch((err) => {
         console.error(err.response.data);
@@ -80,7 +80,7 @@ const UpdateProduct = () => {
       </div>
       <div className="col">
 
-      <button onClick={() => navigate('/pets')} className="btn btn-outline-primary  mt-3 btn-sm">Back to Home</button>
+      <button onClick={() => navigate('/')} className="btn btn-outline-primary  mt-3 btn-sm">Back to Home</button>
       </div>
         
         </div> 

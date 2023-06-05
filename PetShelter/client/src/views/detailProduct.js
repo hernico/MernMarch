@@ -38,7 +38,7 @@ const ProductDetail = () => {
         .then((res) => {
           console.log(res.data);
           setMessage("Haz adoptado una mascota");
-          navigate('/products');
+          navigate('/');
         })
         .catch((err) => console.error(err))
         .finally(() => {
@@ -91,7 +91,7 @@ const ProductDetail = () => {
         </div>
       )}
 
-      <button className="btn btn-outline-primary mx-2" onClick={() => navigate('/pets')}>
+      <button className="btn btn-outline-primary mx-2" onClick={() => navigate('/')}>
         Go to List
       </button>
       <button className="btn btn-outline-warning mx-2" onClick={() => navigate('/pets/actualizar/' + id)}>

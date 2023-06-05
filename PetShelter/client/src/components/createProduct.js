@@ -53,7 +53,7 @@ const CreateProduct = () => {
       .then((res) => {
         console.log(res.data);
         alert("Mascota agregada");
-        navigate('/pets');
+        navigate('/');
       })
       .catch((err) => {
         console.error(err.response.data);
@@ -76,7 +76,7 @@ const CreateProduct = () => {
       </div>
       <div className="col">
 
-      <button type="=" className="btn btn-outline-primary  mt-3 btn-sm" onClick={() => navigate('/pets')}>Back to Home</button></div>
+      <button type="=" className="btn btn-outline-primary  mt-3 btn-sm" onClick={() => navigate('/')}>Back to Home</button></div>
       </div>
 
       <h3>Know a pet needing home?</h3><br />

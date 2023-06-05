@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
       
-      <BrowserRouter>
+      <BrowserRouter >
       <Routes>
         <Route path="/pets/new" element={<CreateProduct />} />
-        <Route path="/pets" element={<ProductList />} />
+        <Route path="/" element={<ProductList />} />
         <Route path="/pets/:id" element={<ProductDetail />} />
         <Route path="/pets/actualizar/:id" element={<UpdateProduct />} />
 
